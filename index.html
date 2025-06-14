@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SunSpot</title>
+  <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="logo">SunSpot</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+      </ul>
+    </nav>
+    </nav>
+        <button class="burger" id="burgerBtn" aria-label="Menu">
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+        </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Explore the Most Beautiful Sunsets</h1>
+        <p>Find the perfect place to watch the sun kiss the horizon 🌅</p>
+        <button id="exploreBtn">Explore</button>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <h2 class="about-title">À propos de SunSpot</h2>
+        <p class="about-text">
+          SunSpot est une expérience web dédiée aux amoureux des couchers de soleil.
+          Chaque lieu référencé a été soigneusement sélectionné pour offrir une vue inoubliable du soleil disparaissant à l'horizon.
+        </p>
+        <ul class="about-list">
+          <li>🌍 Spots authentiques du monde entier</li>
+          <li>📍 Carte interactive bientôt disponible</li>
+          <li>❤️ Sauvegardez vos endroits préférés</li>
+        </ul>
+      </div>
+    </section>
+    <section id="map" class="section map-section">
+        <h2 class="map-title">Où admirer le coucher de soleil ?</h2>
+        <p class="map-description">Découvrez les meilleurs lieux pour observer le coucher du soleil dans le monde entier.</p>
+        <div id="mapid"></div>
+    </section>
+    <section id="favorites" class="section favorites-section">
+        <div class="container">
+            <h2 class="section-title">Your Favorite Spots</h2>
+            <div class="favorites-list" id="favoritesList">
+            <p class="empty-msg">You haven't saved any spots yet.</p>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title">Galerie</h2>
+        <div class="gallery-grid">
+            <img src="/img/hero.jpg" alt="Sunset 1" class="gallery-img" />
+            <img src="/img/hero2.jpg" alt="Sunset 2" class="gallery-img" />
+            <img src="/img/hero.jpg" alt="Sunset 3" class="gallery-img" />
+            <img src="/img/hero2.jpg" alt="Sunset 4" class="gallery-img" />
+            <img src="/img/hero.jpg" alt="Sunset 4" class="gallery-img" />
+            <img src="/img/hero2.jpg" alt="Sunset 4" class="gallery-img" />
+            <!-- Ajoute autant d’images que tu veux -->
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox hidden">
+            <span id="closeLightbox">&times;</span>
+            <img id="lightboxImg" src="" alt="Agrandissement">
+        </div>
+    </section>
+
+
+
+
+
+
+  </main>
+
+  <script src="/script/script.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="/script/map.js"></script>
+</body>
+</html>
